@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="15dp">
+
+            <ImageView
+                android:id="@+id/loc_img"
+                android:layout_width="16dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/loc_img"
+                app:srcCompat="@android:drawable/ic_menu_mylocation"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/loc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/loc_name"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/warn_img"
+                android:layout_width="16dp"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:contentDescription="@string/warning_image" />
+
+            <ImageView
+                android:id="@+id/weather_img"
+                android:layout_width="16dp"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:contentDescription="@string/weather_img"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/temp_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:text="@string/temperature"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/next_img"
+                android:layout_width="16dp"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:contentDescription="@string/nextImg"
+                app:srcCompat="@android:drawable/arrow_down_float"
+                tools:ignore="ImageContrastCheck" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

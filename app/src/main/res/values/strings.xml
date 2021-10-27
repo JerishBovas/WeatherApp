@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="loc_name" />
+    <string name="loc_img">Location Image</string>
+    <string name="temperature">0˚C</string>
+    <string name="warning_image">Warning Image</string>
+    <string name="nextImg">Next image symbol</string>
+    <string name="weather_img">Weather Image</string>
+    <string name="settings">Settings</string>
+</resources>
